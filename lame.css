@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #36393e;
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 50px 20px;
+    border-radius: 20px;
+    text-align: center;
+    width: 600px;
+    max-width: 100%;
+}
+
+.container h1 {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: auto;
+    font-size: 100px;
+    font-weight: 100px;
+    color: transparent;
+    background-image: url(https://media0.giphy.com/media/l1Et7Qw1XjvunS0Io/giphy.gif?cid=ecf05e47dt24r8fv2zevfnu3bst7wo0g4ziulz6cmj1bvcn2&rid=giphy.gif&ct=g);
+    background-position: center;
+    -webkit-background-clip: text;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 25px;
+    padding: 15px 15px;
+    margin-top: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: blue;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s,
+        box-shadow ease-in 0.2s;
+}
+
+.btn::before,
+.btn::after {
+    position: absolute;
+    content: "";
+    display: none;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+
+.btn:active {
+    transform: scale(0.8);
+    background-color: aqua;
+    box-shadow: 0 2px 25px rgba(255,0,130,0.2);
+}
+
+.joke {
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+}
